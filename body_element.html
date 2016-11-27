@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}LEARN_TO_CODE{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home active" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>HTML Tutorial</h1>
+         <a href="html_intro.html"><button type="button" class="list-group-item html1 "><p>HTML Introduction</p></button></a>
+          <a href="html_element.html"><button type="button" class="list-group-item html1"><p>HTML Elements</p></button></a>
+         <a href="head_element.html"><button type="button" class="list-group-item html1"><p>HEAD Elements</p></button></a>
+         <a href=""><button type="button" class="list-group-item html1 active"><p>BODY Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Character Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Image Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>List Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Figure Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Table Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>MATH Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Form Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Special Characters</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Netscape Extensions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Frames and Cookies</p></button></a>
+         <h1>
+           HTML5 Tutorial
+         </h1>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Video&Audio</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Canvas</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Data Storage</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Offline</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Drag & Drop</p></button></a>
+          <a href="index.html"><button type="button" class="list-group-item html1"><p>Geolocation</p></button></a>
+           <a href="index.html"><button type="button" class="list-group-item html1"><p>Messaging & workers</p></button></a>
+      </div>
+</div>
+
+
+    
+<section id="section1">
+   <div class="row">
+    
+    <div class=" col-md-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1>BODY ELEMENTS</h1>
+            <ul class="pager">
+              <li class="previous" ><a href="html_element.html">Previous</a></li>
+              <li class="next"><a href="#">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>&lt;body&gt;</h2>
+            <hr>
+            <p>The HTML &lt;body&gt; Element represents the content of an HTML document. There can be only one &lt;body&gt; element in a document.</b>
+            <p><br><h4><b>Attributes:</b></h4><br><ul><li><b>alink</b><br>Color of text for hyperlinks when selected. This method is non-conforming, use CSS color property in conjunction with the :active pseudo-class instead.</li><br><li><b>background</b><br>URI of a image to use as a background. This method is non-conforming, use CSS background property on the element instead.</li><br><li><b>bgcolor</b><br>Background color for the document. This method is non-conforming, use CSS background-color property on the element instead.</li><br><li><b>bottommargin</b><br>The margin of the bottom of the body. This method is non-conforming, use CSS margin-bottom property on the element instead.</li><br><li><b>leftmargin</b><br>The margin of the left of the body. This method is non-conforming, use CSS margin-left property on the element instead.</li><br><li><b>link</b><br>Color of text for unvisited hypertext links. This method is non-conforming, use CSS color property in conjunction with the :link pseudo-class instead.</li><br><li><b>onafterprint</b><br>Function to call after the user has printed the document.</li><br><li><b>onbeforeprint</b><br>Function to call when the user requests printing of the document.</li><br><li><b>onbeforeunload</b><br>Function to call when the document is about to be unloaded.</li><br><li><b>onblur</b><br>Function to call when the document loses focus.</li><br><li><b>onerror
+            </b><br>Function to call when the document fails to load properly.</li><br><li><b>onfocus</b><br>Function to call when the document receives focus.</li><br><li><b>onhashchange</b><br>Function to call when the fragment identifier part (starting with the hash ('#') character) of the document's current address has changed.</li><br><li><b>onlanguagechange</b><br> Function to call when the preferred languages changed.</li><br><li><b>onload</b><br>Function to call when the document has finished loading.</li><br><li><b>onmessage</b><br>Function to call when the document has received a message.</li><br><li><b>onoffline</b><br>Function to call when network communication has failed.</li><br><li><b>ononline</b><br>Function to call when network communication has been restored.</li><br><li><b>onpopstate</b><br>Function to call when the user has navigated session history.</li><br><li><b>onredo</b><br>Function to call when the user has moved forward in undo transaction history.</li><br><li><b>onresize</b><br>Function to call when the document has been resized.</li><br><li><b>onstorage</b><br>Function to call when the storage area has changed.</li><ul>
+            </p>
+          </div>
+
+          <div class="Why_html">
+             <h2>&lt;div&gt;</h2>
+             <hr>
+             <p>The HTML &lt;div&gt; element (or HTML Document Division Element) is the generic container for flow content, which does not inherently represent anything.</p>
+             <p>It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as &lt;article&gt; or &lt;nav&gt;) is appropriate.</p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;div&gt;<br>&lt;p&gt;Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;.&lt;&sol;p&gt;<br>&lt;&sol;div&gt;<br>&lt;&sol;p&gt;
+              </div>
+            </div> 
+           </div>
+
+           <div class="Why_html">
+             <h2>&lt;p&gt;</h2>
+             <hr>
+             <p>The HTML &lt;p&gt; element (or HTML Paragraph Element) represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation.</p><p>The paragraph must be closed at end of the text "&lt;p&gt; text &lt;&sol;p&gt;" are requried to put the text between the paragraph.</p><p>Paragraphs are block-level elements.</p>
+
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;p&gt;This is the first paragraph of text. This is the first paragraph of text.This is the first paragraph of text. This is the first paragraph of text.&lt;&sol;p&gt;
+
+              <br><br>&lt;p&gt;This is second paragraph of text. This is second paragraph of text.This is second paragraph of text. This is second paragraph of text.&lt;&sol;p&gt;</p>
+              </div>
+              </div> 
+             </div> 
+            
+             <div class="Why_html">
+             <h2>&lt;br&gt;</h2>
+             <hr>
+             <p>The HTML element line break &lt;br&gt; produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p> 
+             </div>
+
+           <div class="Why_html">
+             <h2>&lt;a&gt;</h2>
+             <hr>
+             <p>The HTML Anchor Element (&lt;a&gt;) defines a hyperlink to a location on the same page or any other page on the Web. It can also be used (in an obsolete way) to create an anchor point—a destination for hyperlinks within the content of a page, so that links aren't limited to connecting simply to the top of a page.</p>
+             <p>Some of the attributes are: href,ping,rel,target,type,coords,shape,name,rev,etc.
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;a href="html_intro.html"&gt;HTML&lt;&sol;a&gt;</p>
+              </div>
+              </div> 
+            </div> 
+
+            <div class="Why_html">
+             <h2>&lt;hr&gt;</h2>
+             <hr>
+             <p>The HTML &lt;hr&gt; element represents a thematic break between paragraph-level elements.</p>
+             <p><h5><b>Attributes:</b></h5><br>
+             <ul><li><b>align</b><br>Sets the alignment of the rule on the page. If no value is specified, the default value is left.</li><br>
+            <li><b>color</b><br>Sets the color of the rule through color name or hexadecimal value.</li><br>
+            <li><b>noshade</b><br>Sets the rule to have no shading.</li><br>
+            <li><b>size</b><br>Sets the height, in pixels, of the rule.</li><br>
+            <li><b>width</b><br>Sets the length of the rule on the page through a pixel or percentage value.</li></ul>
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;p&gt;This is the first paragraph of text. This is the first paragraph of text.This is the first paragraph of text. This is the first paragraph of text.&lt;&sol;p&gt;
+              <br><br>&lt;hr&gt;
+              <br><br>&lt;p&gt;This is second paragraph of text. This is second paragraph of text.This is second paragraph of text. This is second paragraph of text.&lt;&sol;p&gt;</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="Why_html">
+             <h2>&lt;pre&gt;</h2>
+             <hr>
+             <p>The HTML &lt;pre&gt; element (or HTML Preformatted Text) represents preformatted text. Text within this element is typically displayed in a non-proportional ("monospace") font exactly as it is laid out in the file. Whitespace inside this element is displayed as typed.</p>
+
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;pre&gt;<br>body{<br>color:red;<br>}<br> &lt;&sol;pre&gt;</p>
+              </div>
+            </div>
+            </div>
+            
+            <div class="Why_html">
+             <h2>&lt;blockquote&gt;</h2>
+             <hr>
+             <p>The HTML &lt;blockquote&gt; Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation.</p>
+             <p>A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the &lt;cite&gt; element.</p>
+
+             <p><b>cite:<br></b>A URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.</p>
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;blockquote cite="html_intro.html"&gt;<br>&lt;p&gt;Hello&lt;&sol;p&gt;<br>&lt;&sol;blockquote&gt;</p>
+              </div>
+            </div>
+
+            <div class="Why_html">
+             <h2>&lt;address&gt;</h2>
+             <hr>
+             <p>The HTML &lt;address&gt; element supplies contact information for its nearest &lt;article&gt; or &lt;body&gt; ancestor; in the latter case, it applies to the whole document.</p>
+             <p><b>cite:<br></b>A URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.</p>
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;address&gt;<br>You can contact author at &lt;a href="http://www.somedomain.com/contact"&gt;www.somedomain.com&lt;&sol;a&gt;.<br>If you see any bugs, please &lt;a href="mailto:webmaster@somedomain.com">contact webmaster&lt;&sol;a&gt;.<br>You may also want to visit us:<br>Mozilla Foundation<br>1981 Landings Drive<br>Building K<br>Mountain View, CA 94043-0801<br>USA<br>&lt;&sol;address&gt;</p>
+              </div>
+            </div>
+            </div>
+
+            
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+   
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

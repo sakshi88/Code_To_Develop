@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: JavaScript</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>JS Tutorial</h1>
+<a href="js_intro.html"><button type="button" class="list-group-item html1 "><p>JS Introduction</p></button></a>
+          <a href=""><button type="button" class="list-group-item html1 active"><p>JS Syntax</p></button></a>
+         <a href="js_output.html"><button type="button" class="list-group-item html1"><p>JS Output</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Syntax</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Statements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Comments</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Variables</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Operators</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Arithmetic</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Assignment</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Datatype</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Functions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <h1>
+      </div>
+</div>
+
+ 
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">JavaScript Syntax</h1>
+            <ul class="pager">
+              <li class="previous"><a href="js_intro.html">Previous</a></li>
+              <li class="next"><a href="js_output.html">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>Syntax</h2>
+            <hr>
+            <p>JavaScript Syntax is the set of rules, how JavaScript programs are constructed.</p>
+          </div>
+
+          <div class="Why_html">
+          <div>
+             <h2>JavaScript Programs</h2>
+             <hr>
+             <p>Javascript is a programming language</p>
+             <p>JavaScript statements are separated by semicolons.</p>
+             <p>In a programming language, these program instructions are called statements.</p>
+             <p>JavaScript statements are separated by semicolons.</p>
+            <div class="example">
+                  <h2>Example</h2>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>var x=10;<br>
+                         var y= 20; <br>
+                         var z = x + y;
+                      </p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+
+              <div>
+             
+             <h2>JavaScript Literals</h2>
+             <hr>
+               <p>The most important rules for writing fixed values are:</p>
+               <p>Numbers are written with or without decimals:</p>
+              <div class="example">
+                  <h2>Example</h2>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>10.5</p>
+                      <p>10</p>
+                      // Strings are text, written within double or single quotes
+                      <p>"Hello"</p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+
+               <div>
+             
+             <h2>JavaScript Variables</h2>
+             <hr>
+               <p>In a programming language, variables are used to store data values</p>
+               <p>JavaScript uses the var keyword to declare variables.</p>
+               <p>An equal sign is used to assign values to variables.</p>
+               <p>In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p>
+              <div class="example">
+                  <h2>Example</h2>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>var x;</p>
+                      <p>x=6;</p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+            <div>
+             
+             <h2>JavaScript Operators</h2>
+             <hr>
+               <p>JavaScript uses an assignment operator ( = ) to assign values to variables:</p>
+              <div class="example">
+                  <h2>Example</h2>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>var x;</p>
+                      <p>x=6;</p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+
+
+            <div>
+             
+             <h2>JavaScript Expresions</h2>
+             <hr>
+               <p>An expression is a combination of values, variables, and operators, which computes to a value.</p>
+               <p>The computation is called an evaluation.</p>
+               <p>For example, 5 * 10 evaluates to 50:</p>
+              
+              <div class="example">
+                  <h2>Example</h2>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>5*10;</p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+
+              <div>
+             
+             <h2>JavaScript Keywords</h2>
+             <hr>
+               <p>JavaScript keywords are used to identify actions to be performed.</p>
+               <p>The var keyword tells the browser to create a new variable:</p>
+               
+              
+              <div class="example">
+                  <h2>Example</h2>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>var x=3+4;</p>
+                      <p>var y=x*10;</p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+            
+          </div> 
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() 
+    {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

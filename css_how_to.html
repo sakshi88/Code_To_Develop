@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: CSS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>CSS Tutorial</h1>
+<a href="css_intro.html"><button type="button" class="list-group-item html1 "><p>CSS Introduction</p></button></a>
+          <a href="css_syntax.html"><button type="button" class="list-group-item html1 "><p>CSS Syntax</p></button></a>
+          <a href=""><button type="button" class="list-group-item html1 active"><p>CSS How To</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Backgrounds</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Borders</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Margins</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Paddings</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Height/Width</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Outline</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Text</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Fonts</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Icons</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Links</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Tables</p></button></a>
+         <h1>
+           CSS3 Tutorial
+         </h1>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Introduction</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Corners</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 2D Tranforms</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 2D Tranforms</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Transitions</p></button></a>
+          <a href="index.html"><button type="button" class="list-group-item html1"><p>SS3 Animations</p></button></a>
+           <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Images</p></button></a>
+      </div>
+</div>
+   
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">CSS HOW TO</h1>
+            <ul class="pager">
+              <li class="previous"><a href="css_syntax.html">Previous</a></li>
+              <li class="next"><a href="">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <p style="font-size:25px">When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+                <h2>Three Ways to insert CSS in HTML page:</h2>
+                <hr>
+                <div class="Ways">
+                  <ul>
+                    <li>Inline Styling</li>
+                    <li>Internal Style-Sheet</li>
+                    <li>External Style-Sheet</li>
+                  </ul>
+                </div>
+            <br><br>
+            <div>
+              <h2>Cascading Order</h2>
+              <hr>
+              <p>What style will be used when there is more than one style specified for an HTML element?</p>
+
+              <p>Generally speaking we can say that all the styles will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+              <ol>
+                <li>
+                  Inline Styling(inside an HTML element)
+                </li>
+                <li>
+                  External and internal style sheets (in the head section)
+                </li>
+                <li>Browser default</li>
+              </ol>
+
+              <p>So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the &lthead>&gt tag, or in an external style sheet, or a browser default value.</p>
+          </div>
+          </div>
+
+
+
+          <div class="Why_html">
+             <h2>Internal Styling</h2>
+             <hr>
+             <p>An inline style may be used to apply a unique style for a single element.
+
+              <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+
+              <p>The example below shows how to change the color and the left margin of a &lth1&gt element:</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>&lth1 style="color:blue;margin-left:30px;"&gtThis is a heading.&lt/h1&gt
+                        </p>
+                      </div>
+                    </div>
+              </div>
+              </div>
+
+          <div class="Why_html">
+             <h2>Internal Style-Sheet</h2>
+             <hr>
+            <p> An internal style sheet may be used if one single page has a unique style.</p>
+
+            <p>Internal styles are defined within the &ltstyle&gt element, inside the &lthead&gt section of an HTML page:<p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>&lthead&gt<br>
+                          &ltstyle&gt<br>
+                          body {<br>
+                              background-color: linen;<br>
+                          }<br>
+
+                          h1 {<br>
+                              color: maroon;<br>
+                              margin-left: 40px;<br>
+                          } <br>
+                          &lt/style&gt
+                          &lt/head&gt
+                        </p>
+                      </div>
+                    </div>
+              </div>
+              </div>
+
+<div class="Why_html">
+             <h2>External Style-Sheet</h2>
+             <hr>
+            <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+
+            <p>Each page must include a reference to the external style sheet file inside the &ltlink&gt element. The &ltlink&gt element goes inside the &lthead&gt section:<p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      &lthead&gt<br>
+                        &ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt<br>
+                      &lt/head&gt
+                      </div>
+                    </div>
+              </div>
+              <p>An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a <b>.css</b> extension.</p>
+              </div> </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() 
+    {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

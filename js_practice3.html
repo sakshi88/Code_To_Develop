@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code_To_Develop</title>    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css02.css">
+  </head>
+
+<body>
+<section class="section1">
+  <div class="header">
+    <div class="row">
+      <div class="col-md-3 button">
+         <a href="index.html"> <button type="button" class="btn btn-default btn-sm" id="home">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </button></a>
+         <a href="Ext_editor.html"><button type="button" class="btn btn-default btn-sm" id="home">
+           <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+         </button></a>
+      </div>
+
+        <div class="col-md-6">
+        <h1>JAVASCRIPT PRACTICE</h1>
+        </div>
+    </div>  
+  </div>
+</section> 
+
+<section id="ques_no">
+    <div class="row">
+       <div class="col-md-2 practice_link"> 
+          <div id="ps"><a href="js_practice1.html" id="loadContent">Practise set-1</a></div>
+          <div id="ps"><a href="js_practice2.html">Practise set-2</a></div>
+          <div id="ps"><a href="js_practice3.html">Practise set-3</a></div>
+          <div id="ps"><a href="#">Practise set-4</a></div>
+          <div id="ps"><a href="#">Practise set-5</a></div>
+          <div id="ps"><a href="#">Practise set-6</a></div>
+          <div id="ps"><a href="#">Practise set-7</a></div>
+          <div id="ps"><a href="#">Practise set-8</a></div>
+          <div id="ps"><a href="#">Practise set-9</a></div>
+      </div>
+      <div class="col-md-offset-1 col-md-9 ques" id="oldContent">
+        <p>1. Write a JavaScript function which accepts an argument and returns the type. 
+        <br><br>2.  Write a JavaScript function which returns the n rows by n columns identity matrix.
+        <br><br>3. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.<br>Sample array : [1,2,3,4,5]<br>Expected Output : 2,4 
+        <br><br>4.Write a JavaScript function which says whether a number is perfect.
+        <br><br>5. Write a JavaScript function to compute the factors of a positive integer.
+        <br><br>6. Write a JavaScript function to convert an amount to coins.
+        <br><br>7. Write a JavaScript function to compute the value of bn where n is the exponent and b is the bases. Accept b and n from the user and display the result. 
+        <br><br>8.Write a JavaScript function to extract unique characters from a string.<br>Example string : "thequickbrownfoxjumpsoverthelazydog"<br>Expected Output : "thequickbrownfxjmpsvlazydg"
+        <br><br>9. Write a JavaScript function to  get the number of occurrences of each letter in specified string.
+        <br><br>10. Write a function for searching JavaScript arrays with a binary search.<br><b>Note :</b> A binary search searches by splitting an array into smaller and smaller chunks until it finds the desired value.</p>
+      </div> 
+
+      <div id="newContent" class="hidden">
+      </div>  
+    </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+      document.getElementById("home").onclick=function(){
+        location.href="index.html";
+      }
+       window.onbeforeunload = function(){ window.scrollTo(0,0); }
+  </script>
+  </body>
+</html>

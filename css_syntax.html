@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: CSS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>CSS Tutorial</h1>
+<a href="css_intro.html"><button type="button" class="list-group-item html1 "><p>CSS Introduction</p></button></a>
+          <a href=""><button type="button" class="list-group-item html1 active"><p>CSS Syntax</p></button></a>
+          <a href="css_how_to.html"><button type="button" class="list-group-item html1"><p>CSS How To</p></button></a>
+         <a href="css_backgrounds.html"><button type="button" class="list-group-item html1"><p>CSS Backgrounds</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Borders</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Margins</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Paddings</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Height/Width</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Outline</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Text</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Fonts</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Icons</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Links</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS Tables</p></button></a>
+         <h1>
+           CSS3 Tutorial
+         </h1>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Introduction</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Corners</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 2D Tranforms</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 2D Tranforms</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Transitions</p></button></a>
+          <a href="index.html"><button type="button" class="list-group-item html1"><p>SS3 Animations</p></button></a>
+           <a href="index.html"><button type="button" class="list-group-item html1"><p>CSS3 Images</p></button></a>
+      </div>
+</div>
+
+
+    
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">CSS SYNTAX</h1>
+            <ul class="pager">
+              <li class="previous"><a href="css_intro.html">Previous</a></li>
+              <li class="next"><a href="css_how_to.html">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>Css uses a selector and a declaration block:</h2>
+                <div class="selector">
+                  <div class="example">
+                    <p>In the example below <b>h1</b> is the <b>selector</b> and the block starting with { } is the <b>declaration block</b></b></p>
+                    <hr>
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>h1/* Selector */<br><br>
+                        {<br> 
+                          height:20px;<br>
+                          width:10px;<br>
+                        }
+                        </p>
+                      </div>
+                    </div>
+                    <p>The <b>selector</b> points to the <b>HTML element</b> you want to style.</p> 
+                    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                 </div>
+                </div>
+                <br>
+          </div>
+
+          <div class="Why_html">
+             <h2>CSS Selectors</h2>
+             <p>CSS selectors are used to "find" the HTML element in a HTML page which you want to style. </p>
+             <hr>
+          <div>
+             <h3>1.The element selectors</h3>
+             <hr>
+               <p>The element selectors are used to select the elements based on the name</p>
+               <p>In the example below &ltp&gt is selected which will show effect(text color red) on every &ltp&gt tag on the html page</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>p<br>
+                        {<br> 
+                          color:20px;<br>
+                        }
+                        </p>
+                      </div>
+                    </div>
+              </div>
+              </div>
+            <div>
+             <h3>2.The id selectors</h3>
+             <hr>
+
+               <p>The element selectors are used to select the elements based on the id of the element.</p>
+               <p>The id is given, to the element, using the id attribute of  HTML </p>
+               <p>Id of the element must be unique on a HTML page.</p>
+               <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+               <p>The following example shows the use of id selectors with CSS</p>
+               <p>It will apply CSS effects on the element with id="My_id"</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>#My_id<br>
+                        {<br> 
+                          color:20px;<br>
+                          height:90px<br>
+                        }
+                        </p>
+                      </div>
+                    </div>
+                 </div>
+          </div>
+
+          <div>
+             <h3>3.The class selectors</h3>
+             <hr>
+               <p>The class selectors are used to select the elements based on the class given to them.</p>
+              <p>The class is given, to the element, using the "class" attribute of HTML </p>
+               <p>class given to a element  must be unique on a HTML page.</p>
+               <p>To select an element with a specific class, write a dot (.), followed by the class of the element.</p>
+               <p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>.center<br> 
+                      {<br>
+                        text-align: center;<br>
+                        color: red;<br>
+                      }
+                        </p>
+                      </div>
+                    </div>
+                     <p>You can also select a specific element that can be affected by the class.</p>
+                    <p>In the example below, only &ltp&gt elements with class="center" will be center-aligned:</p>
+                    <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>p.center<br> 
+                      {<br>
+                        text-align: center;<br>
+                        color: red;<br>
+                      }
+                        </p>
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+          </div>
+          <div>
+             <h2>Grouping selectors</h2>
+             <hr>
+             <p>If you have diiferent selectors with same style definition like as follows:</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>p<br>
+                        {<br> 
+                          color:20px;<br>
+                          height:90px<br>
+                        }
+                        </p>
+
+                        <p>h1<br>
+                        {<br> 
+                          color:20px;<br>
+                          height:90px<br>
+                        }
+                        </p>
+                        <p>h1<br>
+                        {<br> 
+                          color:20px;<br>
+                          height:90px<br>
+                        }
+                        </p>
+                      </div>
+                    </div>
+                    <p>It will be better to group them as to minimize the code </p>
+                    <p>To group the selectors separate each of them with a comma.</p>
+                    <p>Following example shows the grouping of selectors</p>
+
+                  <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                      <p>p,h1,h2</p><br>
+                        {<br> 
+                          <p>color:20px;</p><br>
+                          height:90px<br>
+                        }
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+          <div>
+             <h2>CSS Comments</h2>
+             <hr>
+             <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+             <p>A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</p>
+               <div class="example">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                      <div class="panel-body">
+                     <p> p {<br>
+                    color: red;<br>
+                     /* This is a single-line comment */<br>
+                    text-align: center;<br>
+
+                      }<br>
+                      <br>
+                      /*<br>
+                      Multi line<br>
+                      comment<br>*/
+                      </p>
+
+                      </div>
+                    </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() 
+    {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

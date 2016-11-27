@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>News</title>
+
+<base target="_parent">
+
+<link rel="stylesheet" href="css/news_scroll.css" type="text/css">
+
+</head>
+
+<body class="news-scroll" onMouseover="scrollspeed=0" onMouseout="scrollspeed=current" OnLoad="NewsScrollStart();">
+
+
+<!-- START NEWS FEED -->
+<div id="NewsDiv">
+<div class="scroll-text-if">
+
+<!-- SCROLLER CONTENT STARTS HERE -->
+
+
+
+
+
+
+<span class="scroll-title-if">
+</b>Facebook</b><br>
+</span>
+
+Facebook’s trending topics algorithm puts hoax story about 9/11 at top.
+
+<a href="http://www.hindustantimes.com/tech/facebook-s-trending-topics-algorithm-puts-hoax-story-about-9-11-at-top/story-IU0T3t2yuuLQFVoGbNtN2O.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+
+
+
+
+<span class="scroll-title-if">
+<b>Apple</b><br>
+</span>
+
+Apple launches new Watch series at Rs 32,900, updates first watch
+
+<a href="http://www.hindustantimes.com/tech/apple-launches-new-watch-series-at-rs-32-900-updates-first-watch/story-VPiRigTzxX77haKEEmsVyM.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+<span class="scroll-title-if">
+<b>Cub Linux</b><br>
+</span>
+
+Cub Linux Is a Worthy Chromixium Offspring
+
+<a href="http://www.technewsworld.com/story/Cub-Linux-Is-a-Worthy-Chromixium-Offspring-83878.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+<span class="scroll-title-if">
+<b>Apple’s iPhone 7</b><br>
+</span>
+
+Apple’s iPhone 7, starting at Rs 60,000, to hit Indian shores on October 7
+
+<a href="http://www.hindustantimes.com/tech/apple-s-iphone-7-starting-at-rs-60-000-to-hit-indian-shores-on-october-7/story-xZm67D1JqBg0riT9rJqNNP.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+
+<span class="scroll-title-if">
+<b>Cloud-to-Car AI Platform</b><br>
+</span>
+
+Nvidia, Baidu Team on Cloud-to-Car AI Platform
+
+<a href="http://www.technewsworld.com/story/Nvidia-Baidu-Team-on-Cloud-to-Car-AI-Platform-83863.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+<span class="scroll-title-if">
+<b>Lenovo</b><br>
+</span>
+
+Lenovo grabs 2nd spot in Indian smartphone market: IDC
+
+<a href="http://www.hindustantimes.com/tech/lenovo-grabs-2nd-spot-in-indian-smartphone-market-idc/story-uV7Lls9x9hhweg8jobrOYN.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+
+<span class="scroll-title-if">
+<b>LG Electronics</b><br>
+</span>
+
+LG Electronics says to invest in robot technology
+
+<a href="http://www.hindustantimes.com/tech/lg-electronics-says-to-invest-in-robot-technology/story-sklm6Us2Ie3XjApZLLV0iN.html" target="_blank">More...</a>.
+
+<br>
+
+
+<span class="scroll-title-if">
+<b>Twitter</b><br>
+</span>
+
+Twitter offers video creators share of ad money
+
+<a href="http://www.hindustantimes.com/tech/twitter-offers-video-creators-share-of-ad-money/story-8CyY6XaFpYLYYMaEaPw1JM.html" target="_blank">More...</a>.
+
+<br><br>
+
+
+
+
+
+<!-- END SCROLLER CONTENT -->
+
+</div>
+</div>
+<!-- END NEWS FEED -->
+
+
+
+
+<!-- YOU DO NOT NEED TO EDIT BELOW THIS LINE -->
+
+<script type="text/javascript">
+
+
+var startdelay 		= 2; 		// START SCROLLING DELAY IN SECONDS
+var scrollspeed		= 1.1;		// ADJUST SCROLL SPEED
+var scrollwind		= 1;		// FRAME START ADJUST
+var speedjump		= 30;		// ADJUST SCROLL JUMPING = RANGE 20 TO 40
+var nextdelay		= 0; 		// SECOND SCROLL DELAY IN SECONDS 0 = QUICKEST
+var topspace		= "2px";	// TOP SPACING FIRST TIME SCROLLING
+var frameheight		= 300;		// IF YOU RESIZE THE CSS HEIGHT, EDIT THIS HEIGHT TO MATCH
+
+
+current = (scrollspeed);
+
+
+function HeightData(){
+AreaHeight=dataobj.offsetHeight
+if (AreaHeight===0){
+setTimeout("HeightData()",( startdelay * 1000 ))
+}
+else {
+ScrollNewsDiv()
+}}
+
+function NewsScrollStart(){
+dataobj=document.all? document.all.NewsDiv : document.getElementById("NewsDiv")
+dataobj.style.top=topspace
+setTimeout("HeightData()",( startdelay * 1000 ))
+}
+
+function ScrollNewsDiv(){
+dataobj.style.top=scrollwind+'px';
+scrollwind-=scrollspeed;
+if (parseInt(dataobj.style.top)<AreaHeight*(-1)) {
+dataobj.style.top=frameheight+'px';
+scrollwind=frameheight;
+setTimeout("ScrollNewsDiv()",( nextdelay * 1000 ))
+}
+else {
+setTimeout("ScrollNewsDiv()",speedjump)
+}}
+
+
+</script>
+
+
+</body>
+</html>

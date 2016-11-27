@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: JavaScript</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>JS Tutorial</h1>
+<a href="js_intro.html"><button type="button" class="list-group-item html1 "><p>JS Introduction</p></button></a>
+          <a href="js_syntax.html"><button type="button" class="list-group-item html1 "><p>JS Syntax</p></button></a>
+         <a href=""><button type="button" class="list-group-item html1 active"><p>JS Output</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Syntax</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Statements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Comments</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Variables</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Operators</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Arithmetic</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Assignment</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Datatype</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Functions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <h1>
+      </div>
+</div>
+
+ 
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">JavaScript Output</h1>
+            <ul class="pager">
+              <li class="previous"><a href="js_syntax.html">Previous</a></li>
+              <li class="next"><a href="">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <p style="font-size:25px">JavaScript does NOT have any built-in print or display functions.</p>
+          </div>
+
+          <div class="Why_html">
+          <div>
+             <h2>JavaScript Display Possibilities</h2>
+             <hr>
+             <p>JavaScript can "display" data in different ways:</p>
+              <div class="Ways">
+                  <ul>
+                    <li>Writing into an alert box, using <b>window.alert()</b>.</li>
+                    <li>Writing into the HTML output using <b>document.write()</b>.</li>
+                    <li>Writing into an HTML element, using <b>innerHTML</b>.</li>
+                    <li>Writing into the browser console, using <b>console.log()</b>.</li>
+                  </ul>
+                </div>
+            <div class="example">
+                  <h2>Using window.alert()</h2>
+                  <p>You can use an alert box to display data:</p>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>&lt!DOCTYPE html&gt<br>
+                        &lthtml&gt<br>
+                        &ltbody&gt<br>
+
+                        &lth1&gtMy First Web Page&lt/h1&gt<br>
+                        &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                        &ltscript&gt<br>
+                        <b>window.alert(5 + 6)</b>;<br>
+                        &lt/script&gt<br>
+
+                        &lt/body&gt<br>
+                        &lt/html&gt </p>
+                    </div>
+                  </div> 
+              </div>
+
+
+
+
+              <div class="example">
+                  <h2>Using document.write()</h2>
+                  <p>For testing purposes, it is convenient to use document.write():</p>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>&lt!DOCTYPE html&gt<br>
+                        &lthtml&gt<br>
+                        &ltbody&gt<br>
+
+                        &lth1&gtMy First Web Page&lt/h1&gt<br>
+                        &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                        &ltscript&gt<br>
+                        <b>document.write(5 + 6)</b>;<br>
+                        &lt/script&gt<br>
+
+                        &lt/body&gt<br>
+                        &lt/html&gt </p>
+                    </div>
+                  </div> 
+                    <b>Using document.write() after an HTML document is fully loaded, will delete all existing HTML:</b>
+
+              <div class="example">
+                  <h2>Using innerHTML</h2>
+                  <hr>
+                  <p>To access an HTML element, JavaScript can use the <b>document.getElementById(id)</b> method.</p>
+
+                  <p>The id attribute defines the HTML element. The <b>innerHTML</b> property defines the HTML content:</p>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>&lt!DOCTYPE html&gt<br>
+                        &lthtml&gt<br>
+                        &ltbody&gt<br>
+
+                        &lth1&gtMy First Web Page&lt/h1&gt<br>
+                        &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                        &ltscript&gt<br>
+                        <b>document.write(5 + 6)</b>;<br>
+                        &lt/script&gt<br>
+
+                        &lt/body&gt<br>
+                        &lt/html&gt </p>
+                    </div>
+                  </div> 
+                </div>
+
+                 <div class="example">
+                  <h2>Using console.log()</h2>
+                  <hr>
+                  <p>In your browser, you can use the console.log() method to display data.</p>
+
+                    <p>Activate the browser console with F12, and select "Console" in the menu.</p>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>&lt!DOCTYPE html&gt<br>
+                        &lthtml&gt<br>
+                        &ltbody&gt<br>
+
+                        &lth1&gtMy First Web Page&lt/h1&gt<br>
+                        &ltp&gtMy first paragraph.&lt/p&gt<br>
+
+                        &ltscript&gt<br>
+                        <b>console.log(5 + 6)</b>;<br>
+                        &lt/script&gt<br>
+
+                        &lt/body&gt<br>
+                        &lt/html&gt </p>
+                    </div>
+                  </div> 
+                </div>
+
+
+
+
+              </div>
+              </div>
+              </div>
+
+              
+    
+
+
+        
+          </div> 
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() 
+    {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+body::-webkit-scrollbar {
+    width: 5px;
+   
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px navy;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #D5132B;
+   
+}
+
+
+body{
+	margin-top:-20px;
+	font-family: Fredoka One;
+}
+.section2
+{
+	padding-top:50px;
+}
+.btn.btn-default.btn-sm
+{
+     margin-left:8%; 
+     margin-top:0%;
+     color:navy;
+}
+#tip_h1
+{
+	color:navy;
+	font-weight: bold;
+}
+.header
+{
+	height:200px;
+	background-color:navy;
+}
+.header h1
+{
+	text-align: center;
+	padding-top:10%;
+	font-size:50px;
+	color:white;
+}
+.button
+{
+ padding-top:7%;
+ padding-left:7%;
+}
+
+
+
+#tip1{
+
+	width:100%;
+	height: 100%;
+}
+
+#tip1_h5{
+	font-size: 20px;
+	color: #D5132B;
+	font-family: "Times New Roman", Times, serif;
+}
+
+pre{
+	border: 1px solid navy;
+	color:black;
+	font-weight: bold;
+	font-size:15px;
+	background-color: white;
+}
+
+#ques_no
+{
+	margin-top: 30px;
+	width:100%;
+	height:100%;
+}
+
+.practice_link
+{
+	border-right: 2px solid navy;
+	overflow-y:auto;
+	padding-left: 50px;
+}
+
+#ps 
+{
+	padding: 10px;
+}
+
+#ps a
+{
+	color: #D5132B;
+	font-weight: italic;
+	font-size: 17px;
+}
+#ps a:hover
+{
+	text-decoration: none;
+}
+
+.ques
+{
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.ps a:active
+{
+	color: navy;
+}

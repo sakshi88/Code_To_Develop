@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: HTML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>HTML Tutorial</h1>
+          <a href=""><button type="button" class="list-group-item html1 active"><p>HTML Introduction</p></button></a>
+          <a href="html_element.html"><button type="button" class="list-group-item html1"><p>HTML Elements</p></button></a>
+         <a href="head_element.html"><button type="button" class="list-group-item html1"><p>HEAD Elements</p></button></a>
+         <a href="body_element.html"><button type="button" class="list-group-item html1"><p>BODY Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Character Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Image Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>List Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Figure Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Table Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>MATH Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Form Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Special Characters</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Netscape Extensions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Frames and Cookies</p></button></a>
+         <h1>
+           HTML5 Tutorial
+         </h1>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Video&Audio</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Canvas</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Data Storage</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Offline</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Drag & Drop</p></button></a>
+          <a href="index.html"><button type="button" class="list-group-item html1"><p>Geolocation</p></button></a>
+           <a href="index.html"><button type="button" class="list-group-item html1"><p>Messaging & workers</p></button></a>
+      </div>
+</div>
+
+
+    
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">HTML INTRODUCTION</h1>
+            <ul class="pager">
+              <li class="previous disabled"><a>Previous</a></li>
+              <li class="next"><a href="html_element.html">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>HTML</h2>
+            <hr>
+            <p>HTML stands for Hyper-Text Markup Language which is used to create or Markup the Web documents.</p>
+        
+                  <p> A markup language is set of markup tags.</p>
+                  <p>HTML documents are described by HTML tags.</p>
+                  <p>Each HTML tag describes different document content</p>
+                <br>
+            
+                <p>It is an programming language of sorts.The instructions are compiled by the WWW browser.</p>
+                <p>HTML is basically a set of instructions and each such instruction is called an <b>element</b>.</p>
+                <p>The qualities of an element are called <b>Attributes</b>.These attributes control the behaviour of an element.</p>  
+            </p>
+          </div>
+
+          <div class="Why_html">
+             <h2>Why HTML?</h2>
+             <hr>
+             <p>HTML is at the heart of the Web.A language was required so as to create Webpages, so HTML been easy to write,easy to understand and highly portable was choosen.A HTML file contains instructions that any Web browser interprets and when these browsers display the file,it is known as a <b>page</b> on Web.  </p>
+          </div> 
+
+
+          <div class="html_version">
+            <h2>HTML Versions</h2>
+            <div class="table-responsive">
+              <table class="table table-condensed">
+                <tr>
+                  <th>Version</th>
+                  <th>Year of release</th> 
+                </tr>
+                <tr>
+                  <td>HTML</td>
+                  <td>1991</td> 
+                </tr>
+                <tr>
+                  <td>HTML 2.0</td>
+                  <td>1995</td> 
+                </tr>
+                <tr>
+                  <td>HTML 3.2</td>
+                  <td>1997</td> 
+                </tr>
+                <tr>
+                 <td>HTML 4.01</td>
+                  <td>1999</td> 
+                </tr>
+                <tr>
+                 <td>XHTML</td>
+                  <td>2000</td> 
+                </tr>
+                <tr>
+                  <td>HTML5</td>
+                  <td>2014</td> 
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+
+          <div class="example">
+            <h2>Example</h2>
+            <hr>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;HTML&gt;<br>&lt;HEAD&gt;<br>&lt;TITLE&gt;This is the title&lt;&sol;TITLE&gt;<br>&lt;&sol;HEAD&gt;<br>&lt;BODY&gt;<br>&lt;h1&gt;This is my first heading&lt;&sol;h1&gt;<br>HELLO WORLD!!!<br>&lt;&sol;BODY&gt;<br>&lt;&sol;HTML&gt;</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="example">
+            <h2>Output</h2>
+            <hr>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Output</b></h3>
+              </div>
+              <div class="panel-body">
+                <p>This is my first heading<br>HELLO WORLD!!! 
+                </p>
+              </div>
+            </div> 
+          </div>
+
+
+          <div class="html_tag">
+            <h2>HTML Tags</h2>
+              <hr>
+              <p>HTML tags are <em><b>keywords</b></em> surrounded by <em><b>angle brackets</b></em>.</p>
+                <ul>
+                  <li>HTML tags normally come in pairs like &ltp&gt and &lt/p&gt.</li>
+                  <li>The first tag in a pair is the start tag, the second tag is the end tag</li>
+                  <li>The end tag is written like the start tag, but with a forward slash inserted before the tag name</li>
+                </ul>
+              <h3>Usage of Tags:</h3>
+                <h4><b>&lttagname&gt Contents Goes here....&lt/tagname&gt</b></h4>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+   
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

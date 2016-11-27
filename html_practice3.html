@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css02.css">
+  </head>
+
+
+
+<body>
+<section class="section1">
+  <div class="header">
+    <div class="row">
+      <div class="col-md-3 button">
+         <a href="index.html"> <button type="button" class="btn btn-default btn-sm" id="home">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </button></a>
+         <a href="Ext_editor.html"><button type="button" class="btn btn-default btn-sm" id="home">
+           <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+         </button></a>
+      </div>
+
+        <div class="col-md-6">
+        <h1>HTML PRACTICE</h1>
+        </div>
+    </div>  
+  </div>
+</section> 
+
+<section id="ques_no">
+    <div class="row">
+       <div class="col-md-2 practice_link"> 
+          <div id="ps"><a href="html_practice1.html">Practise set-1</a></div>
+          <div id="ps"><a href="html_practice2.html">Practise set-2</a></div>
+          <div id="ps"><a href="">Practise set-3</a></div>
+          <div id="ps"><a href="#">Practise set-4</a></div>
+          <div id="ps"><a href="#">Practise set-5</a></div>
+          <div id="ps"><a href="#">Practise set-6</a></div>
+          <div id="ps"><a href="#">Practise set-7</a></div>
+          <div id="ps"><a href="#">Practise set-8</a></div>
+          <div id="ps"><a href="#">Practise set-9</a></div>
+      </div>
+    <div class="container"> 
+      <div class="col-md-offset-1 col-md-9 ques" id="oldContent">
+     
+        <p>1. Why &ltq&gt&lt/q&gt tag is used?
+        <br><br>2.Write "Hello" as :
+        <p><b>Hello</b></p>
+        3.Give HTML to write "My name is Dav"  as:<br>
+          </b><em>My name is Dav</em></b>
+        <br><br>s4.How to comment a line in html?
+        <br>
+         <li style="display:inline; padding:15px">1)  &lt!-- comments--&gt</li>
+          <li style="display:inline; padding:15px">2) &lt-- comments&gt </li>
+          <li style="display:inline; padding:15px">3) Don't Know</li>
+        <br><br>5.Can we write javascript and css in html page?
+        <br>
+        <li style="display:inline; padding:15px">1) No</li>
+          <li style="display:inline; padding:15px">2) Yes</li>
+          <li style="display:inline; padding:15px">3) Don't Know</li>
+        
+        </p>
+      </div> 
+     </div>
+      <div id="newContent" class="hidden">
+      </div>  
+    </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+      document.getElementById("home").onclick=function(){
+        location.href="index.html";
+      }
+       window.onbeforeunload = function(){ window.scrollTo(0,0); }
+  </script>
+  </body>
+</html>

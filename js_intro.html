@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop: JavaScript</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>JS Tutorial</h1>
+<a href=""><button type="button" class="list-group-item html1 active"><p>JS Introduction</p></button></a>
+          <a href="js_syntax.html"><button type="button" class="list-group-item html1"><p>JS Syntax</p></button></a>
+         <a href="js_output.html"><button type="button" class="list-group-item html1"><p>JS Output</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Syntax</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Statements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Comments</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Variables</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Operators</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Arithmetic</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Assignment</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Datatype</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Functions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>JS Objects</p></button></a>
+         <h1>
+      </div>
+</div>
+
+ 
+<section id="section1">
+   <div class="row">  
+    <div class=" col-md-12 col-xs-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1 id="heading">JavaScript INTRODUCTION</h1>
+            <ul class="pager">
+              <li class="previous disabled"><a>Previous</a></li>
+              <li class="next"><a href="js_syntax.html">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>JavaScript</h2>
+            <hr>
+            <p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language.</p>
+            <p>Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production</p>
+            <p>JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,imperative, and functional programming styles.</p>
+         
+          </div>
+
+          <div class="Why_html">
+          <div>
+             <h2>What JavaScript can do?</h2>
+             <hr>
+             
+             <h3>1. JavaScript can change HTML Content.</h3>
+             <hr>
+               <p>One of many JavaScript HTML methods is <b>getElementById()</b>.</p>
+               <p>This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</p>
+
+              <div class="example">
+                  <h2>Example</h2>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>document.getElementById("demo").innerHTML = "Hello JavaScript";
+                      </p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+
+              <div>
+             
+             <h3>2. JavaScript can change HTML Style.</h3>
+             <hr>
+               <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</b>.</p>
+              <div class="example">
+                  <h2>Example</h2>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><b>Example</b></h3>
+                    </div>
+                    <div class="panel-body">
+                      <p>document.getElementById("demo").style.fontSize = "25px";
+                      </p>
+                    </div>
+                  </div> 
+              </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() 
+    {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+ window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

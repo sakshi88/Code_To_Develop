@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css02.css">
+  </head>
+
+
+
+  <body>
+
+
+<section class="section1">
+  <div class="header">
+    <div class="row">
+      <div class="col-md-3 button">
+         <a href="index.html"> <button type="button" class="btn btn-default btn-sm" id="home">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </button></a>
+         <a href="Ext_editor.html"><button type="button" class="btn btn-default btn-sm" id="home">
+           <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+         </button></a>
+      </div>
+
+        <div class="col-md-6">
+        <h1>HTML PRACTICE</h1>
+        </div>
+    </div>  
+  </div>
+</section> 
+
+<section id="ques_no">
+    <div class="row">
+       <div class="col-md-2 practice_link"> 
+          <div id="ps"><a href="html_practice1.html">Practise set-1</a></div>
+          <div id="ps"><a href="">Practise set-2</a></div>
+          <div id="ps"><a href="html_practice3.html">Practise set-3</a></div>
+          <div id="ps"><a href="#">Practise set-4</a></div>
+          <div id="ps"><a href="#">Practise set-5</a></div>
+          <div id="ps"><a href="#">Practise set-6</a></div>
+          <div id="ps"><a href="#">Practise set-7</a></div>
+          <div id="ps"><a href="#">Practise set-8</a></div>
+          <div id="ps"><a href="#">Practise set-9</a></div>
+      </div>
+    <div class="container"> 
+      <div class="col-md-offset-1 col-md-9 ques" id="oldContent">
+        <p>1. Write CSS so that link &lta href="xyz.com"&gtCheck documentation&lt/a&gt looks like:
+        <br><a style="color:red"> Check Documentation</a>
+        <br><br>2. Write a HTML/CSS so that a link &lta href="abc.com"&gt Click Me &lt/a&gt looks like:
+        <br><button type="button" class="btn btn-primary btn-sm ">Click Me</button>
+        <br><br>3. Which attribute must be used in &lta&gt&lt/a&gt tag  for linking <br>
+        a) href      b)rel.
+        <br><br>4.Write HTML/CSS to create a navigation bar  as.
+        <div class="my_nav" style="background-color:#5143b5">
+          <ul style="list-style:none ; ">
+            <li style="display:inline-block; padding:10px"> Home</li>
+            <li style="display:inline-block; padding:10px">About</li>
+            <li style="display:inline-block; padding:10px">Contact</li>
+          </ul>
+        </div>
+        <br>5.Write HTML to make dropdown as
+        <br>
+        <select>
+          <option value="India">India</option>
+          <option value="UK">UK</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+        </select> 
+        </p>
+      </div> 
+     </div>
+      <div id="newContent" class="hidden">
+      </div>  
+    </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+      document.getElementById("home").onclick=function(){
+        location.href="index.html";
+      }
+       window.onbeforeunload = function(){ window.scrollTo(0,0); }
+  </script>
+  </body>
+</html>

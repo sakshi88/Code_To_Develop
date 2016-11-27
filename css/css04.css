@@ -1,0 +1,52 @@
+body::-webkit-scrollbar {
+    width: 5px;
+   
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px navy;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #D5132B;
+   
+}
+
+body
+{
+	background-color:navy;
+	font-family: Fredoka One;
+
+}
+.home
+{	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+.buttons
+{
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.editor h1
+{
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#sourceCode{
+	font-size:18px;
+}
+  
+#targetCode{
+  font-size:18px;	
+}                  
+textarea, iframe 
+{
+    border: 2px solid #D5132B;
+    height: 500px;
+    width: 100%;	
+    background-color: white;  
+    font-size: 18px;
+}

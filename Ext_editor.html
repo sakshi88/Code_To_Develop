@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Code_To_Develop: EDITOR</title>
+        <link rel="stylesheet" type="text/css" href="css/css04.css">
+         <link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+
+
+    <body>
+
+    
+    <div class="container">
+        <div class="row home">
+            <div class="col-md-12">
+                <a href="index.html"><button type="button" class="btn btn-default btn-sm" id="home" >
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </button></a>
+            </div>
+         </div>
+        <div class="row buttons ">
+            <div class="col-md-12">
+                <button class="btn btn-danger btn-lg" onclick="runCode();" value="RunCode">Run Code</button>
+            </div>
+         </div>
+        <div class="row">
+           <div class="col-md-6 editor">
+                
+<textarea name="sourceCode" id="sourceCode">
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<h1>Hello!</h1>
+<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
+</body>
+</html>
+</textarea>
+            </div> 
+
+            <div class="col-md-6 console">
+                
+                <iframe name="targetCode" id="targetCode"></iframe>
+            </div>    
+    </div>
+<script type="text/javascript">
+  function runCode()
+    {           var content = document.getElementById('sourceCode').value;
+                var iframe = document.getElementById('targetCode');
+                iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+                iframe.document.open();
+                iframe.document.write(content);
+                iframe.document.close();
+                return false;
+                
+    }        
+    runCode();          
+</script>
+    </body>
+</html>

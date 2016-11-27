@@ -1,0 +1,107 @@
+@media only screen and (min-width:320px) and (max-width:480px){
+  
+.project_name
+{	
+	padding-left:4%;
+}
+
+.navbar-brand{
+	font-size:20px;
+}
+
+.carousel-caption h1 
+{
+ font-size: 20px;
+}
+
+.carousel-caption p
+{
+ font-size: 10px;
+}
+
+#css{
+	margin-top: 15px;
+}
+
+#js{
+	margin-top: 15px;
+}
+
+#h4_html{
+	margin:10%;
+}
+
+#h4_p_html{
+	margin:10%;
+}
+
+.course_image img
+{  
+	margin: 5%;
+	width:90%;
+	height:200px;
+	border:7px solid #D5132B ;
+}
+
+#h4_css{
+	margin:10%;
+}
+
+#h4_p_css{
+	margin:10%;
+}
+
+#h4_js{
+	margin:10%;
+}
+
+#h4_p_js{
+	margin:10%;
+}
+
+#practice_h3{
+	font-size: 50px;
+}
+
+#practice_p
+{   font-size:20px;
+}
+
+#button2{
+	margin-top: 3%;
+}
+
+.panel-body p{
+  overflow-x: auto;
+  text-align: justify;
+    text-justify: inter-word;
+}
+
+#Title{
+   font-size: 20px;
+}
+
+#Sign
+{
+	
+	font-size: 15px;
+}
+
+#heading{
+	font-size: 22px;
+}
+
+p,li
+{
+	font-size: 12px;
+}
+
+.panel
+{
+	overflow-x: auto;
+}
+
+.what_html,.Why_html,.html_version,.example,.html_tag h2{
+   font-size: 11px;
+}
+}

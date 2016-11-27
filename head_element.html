@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css03.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}LEARN_TO_CODE{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="index.html" class=" glyphicon glyphicon-home active" title="HOME" style="text-decoration:none"></a></li>
+            <li><a href="Ext_editor.html" target="_blank" class=" glyphicon glyphicon-edit" title="EDITOR"></a></li>
+             <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="Tips"></a></li>
+             <li><a  target="_blank" class="glyphicon glyphicon-play-circle" title="Lessons" onclick="openNav()"></a>  </li>
+          </ul>
+          
+        </div> 
+      </div>
+    </nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+          <h1>HTML Tutorial</h1>
+         <a href="html_intro.html"><button type="button" class="list-group-item html1 "><p>HTML Introduction</p></button></a>
+          <a href="html_element.html"><button type="button" class="list-group-item html1"><p>HTML Elements</p></button></a>
+         <a href="head_element.html"><button type="button" class="list-group-item html1 active"><p>HEAD Elements</p></button></a>
+         <a href="body_element.html"><button type="button" class="list-group-item html1"><p>BODY Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Character Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Image Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>List Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Figure Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Table Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>MATH Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Form Elements</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Special Characters</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Netscape Extensions</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Frames and Cookies</p></button></a>
+         <h1>
+           HTML5 Tutorial
+         </h1>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Video&Audio</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Canvas</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Data Storage</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Offline</p></button></a>
+         <a href="index.html"><button type="button" class="list-group-item html1"><p>Drag & Drop</p></button></a>
+          <a href="index.html"><button type="button" class="list-group-item html1"><p>Geolocation</p></button></a>
+           <a href="index.html"><button type="button" class="list-group-item html1"><p>Messaging & workers</p></button></a>
+      </div>
+</div>
+
+
+    
+<section id="section1">
+   <div class="row">
+    
+    <div class=" col-md-12 " >
+      <div class="page_content" >
+        <div class="page_content_div" >
+          <h1>HEAD ELEMENTS</h1>
+            <ul class="pager">
+              <li class="previous" ><a href="html_element.html">Previous</a></li>
+              <li class="next"><a href="body_element.html">Next</a></li>
+           </ul>
+          <div class="what_html">
+            <h2>&lt;head&gt;</h2>
+            <hr>
+            <p>The HTML &lt;head&gt; element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.Elements that can be used inside a &lt;head&gt; element: <b>&lt;title&gt;, &lt;base&gt;, &lt;link&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;noscript&gt;</b></p>
+          </div>
+
+          <div class="Why_html">
+             <h2>&lt;base&gt;</h2>
+             <hr>
+             <p>The HTML &lt;base&gt; element specifies the base URL to use for all relative URLs contained within a document. There can be only one &lt;base&gt; element in a document. </p>
+             <p>This element includes the global attributes.
+             <p><b><u>(a) href:</b></u><br>The base URL to be used throughout the document for relative URL addresses. If this attribute is specified, this element must come before any other elements with attributes whose values are URLs. Absolute and relative URLs are allowed.<p>
+            <br><p><b><u>(b)target:</b></u><br>A name or keyword indicating the default location to display the result when hyperlinks or forms cause navigation, for elements that do not have an explicit target reference. It is a name of, or keyword for, a browsing context (for example: tab, window, or inline frame). The following keywords have special meanings:
+            <br>_self: Load the result into the same browsing context as the current one. This value is the default if the attribute is not specified.
+            <br>_blank: Load the result into a new unnamed browsing context.
+            <br>_parent: Load the result into the parent browsing context of the current one. If there is no parent, this option behaves the same way as _self.
+            <br>_top: Load the result into the top-level browsing context (that is, the browsing context that is an ancestor of the current one, and has no parent). If there is no parent, this option behaves the same way as _self.</p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;head&gt;<br>&lt;base href="http://www.myexample.com/html_intro.html"&gt;<br>&lt;base target="_blank" href="http://www.example.com/html_intro.html"&gt;<br>&lt;&sol;head&gt;</p>
+              </div>
+            </div> 
+           </div>
+
+           <div class="Why_html">
+             <h2>&lt;link&gt;</h2>
+             <hr>
+             <p>The HTML &lt;link&gt; element specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.</p>
+             <p><br><h4><b>Attributes:</b></h4><br><b><u>(a)crossorigin</u></b>
+              This enumerated attribute indicates whether CORS must be used when fetching the related image. CORS-enabled images can be reused in the &lt;canvas&gt; element without being tainted. The allowed values are:<br>(i)"anonymous":<br>A cross-origin request (i.e. with Origin: HTTP header) is performed. But no credential is sent (i.e. no cookie, no X.509 certificate and no HTTP Basic authentication is sent). If the server does not give credentials to the origin site (by not setting the Access-Control-Allow-Origin: HTTP header) the image will be tainted and its usage restricted.
+              <br>(ii)"use-credentials":
+              <br>A cross-origin request (i.e. with Origin: HTTP header) is performed with credential is sent (i.e. a cookie, a certificate and HTTP Basic authentication is performed). If the server does not give credentials to the origin site (through Access-Control-Allow-Credentials: HTTP header), the image will be tainted and its usage restricted.  
+              When not present, the resource is fetched without a CORS request (i.e. without sending the Origin: HTTP header), preventing its non-tainted used in &lt;canvas&gt; elements. If invalid, it is handled as if the enumerated keyword anonymous was used. </p>
+              
+              <p><br><b><u>(b)href:</u></b><br>This attribute specifies the URL of the linked resource. A URL might be absolute or relative.</p>
+              <p><br><b><u>(c)hreflang:</u></b><br>This attribute indicates the language of the linked resource. It is purely advisory. Allowed values are determined by <b>BCP47</b>. Use this attribute only if the href attribute is present.</p>
+              <p><br><b><u>(d)rel:</u></b><br>This attribute names a relationship of the linked document to the current document.<br>The attribute must be a space-separated list of the link types values.<br>The most common use of this attribute is to specify a link to an external style sheet: the rel attribute is set to stylesheet, and the href attribute is set to the URL of an external style sheet to format the page.</p>
+              <p><br><b><u>(e)title:</u></b><br>The title attribute has special semantics on the <link> element. When used on a <link rel="stylesheet"> it defines a preferred or an alternate stylesheet. Incorrectly using it may cause the stylesheet to be ignored.</p>
+            </div>
+
+             <div class="Why_html">
+             <h2>&lt;meta&gt;</h2>
+             <hr>
+             <p>The HTML &lt;meta&gt; element represents any metadata information that cannot be represented by one of the other HTML meta-related elements.
+             </p>
+             <p>Meta data can be of following types:<ul><li>If name is set, it is document-level metadata, applying to the whole page.</li><li>If http-equiv is set, it is a pragma directive, i.e. information normally given by the web server about how the web page should be served.</li>
+            <li>If charset is set, it is a charset declaration, i.e. the charset used for the serialized form of the webpage.</li><li>If itemprop is set, it is user-defined metadata, transparent for the user-agent as the semantics of the metadata is user-specific.</li></ul>
+             <p>It has the following attributes:charset, content,http-equiv,default-style,refresh,name,etc</p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;head&gt;<br>&lt;meta charset="utf-8"&gt;<br>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;<br>&lt;meta http-equiv="refresh" content="3;url=http://www.mozilla.org/"&gt;</p>
+              </div>
+            </div> 
+
+             </div>
+
+           <div class="Why_html">
+             <h2>&lt;style&gt;</h2>
+             <hr>
+             <p>The HTML &lt;style&gt; element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.</p>
+             <p><br><h4><b>Attributes:</b></h4><br><br><b><u>(a)type:</u></b>This attribute defines the styling language as a MIME type (charset should not be specified). This attribute is optional and default to text/css if it's missing.<br><b><u>(b)media:</u></b>This attribute defines which media the style should apply to. It's value is a media query, which default to all if the attribute is missing.<br><b><u>(c)scoped:</u></b>If this attribute is present, then the style applies only to its parent element. If absent, the style applies to the whole document.<br><b><u>(d)title:</u></b>Specifies alternative style sheet sets.</p>
+
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;style type="text/css"&gt;<br>body<br>{<br>color:red;<br>}<br>&lt;&sol;style&gt;</p>
+              </div>
+              </div> 
+            </div> 
+
+            <div class="Why_html">
+             <h2>&lt;title&gt;</h2>
+             <hr>
+             <p>The HTML &lt;title&gt; element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored.</p>
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;title&gt;My first Page&lt;&sol;title&gt;</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="Why_html">
+             <h2>&lt;script&gt;</h2>
+             <hr>
+             <p>The HTML Script Element (&lt;script&gt;) is used to embed or reference an executable script within an HTML or XHTML document.</p>
+             <p>Scripts without async or defer attributes, as well as inline scripts, are fetched and executed immediately, before the browser continues to parse the page.</p><p>Some of the attributes are:text,language,defer,crossorigin,type and integrity</p>
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Example</b></h3>
+              </div>
+              <div class="panel-body">
+              <p>&lt;script type="text/javascript" src="javascript.js"&gt;<br>&lt;&sol;script&gt;<br>&lt;script src="javascript.js"&gt;<br>&lt;&sol;script&gt;</p>
+              </div>
+            </div>
+            
+
+            
+    </div>
+   </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+   
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  
+}
+
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+body::-webkit-scrollbar {
+    width: 5px;
+   
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px navy;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #D5132B;
+   
+}
+
+html,body
+{
+	height:100%;
+	width:100%;
+}
+html, body 
+{
+	margin:0;padding:0;height:100%;
+	font-family: Fredoka One;
+}
+/*********************************************navabar code starts from here****************************/
+.tags
+{
+	text-shadow:3px 3px 3px #D5132B;
+}
+.project_name
+{	
+	font-family: courier;
+	font-weight: bolder;
+	position: absolute;
+	padding-left:32%;
+	
+}
+.navbar-brand{
+	font-size:25px;
+	font-family: Fredoka One;
+}         
+
+.nav.navbar-nav{
+	font-size:20px;
+	
+}
+.nav.navbar-nav li a
+{
+	padding-left:40px;
+	color:#003366;
+}
+/*********************************************ends here***********************************************/
+#section1
+{
+	 padding-top: 50px;
+}
+
+.mypanel
+{
+	height:100%;
+	color: white;
+}
+
+.panel-body{
+  overflow-x: scroll;
+}
+.side_panel
+{	
+	position:fixed;
+	padding-left:6px;
+	height:900px;
+	overflow-y:auto !important;
+	background-color: navy;
+	color:white;
+	
+}
+
+.side_panel h1
+{
+	font-size:10px;
+	padding-left:10px;
+}
+
+.html1
+{
+	border:none;
+	background-color: navy;
+	font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+}
+
+.side_panel h1{
+	font-family: "Impact", Charcoal, sans-serif;
+	font-size: 25px;
+}
+
+.side_panel h1:hover
+{
+	color:#D5132B;
+
+}
+
+
+.html1:hover
+{
+	border:none;
+	
+	color: navy;
+}
+
+.html1 p{
+	color:white;
+}
+
+.html1 p:hover
+{
+	color:navy;
+}
+.page_content
+{
+	width:100%;
+	padding:40px;
+	background-color:navy;
+}
+
+.page_content_div
+{
+	width:100%;
+	height:100%;
+	padding:40px;
+	padding-top: 20px;
+	background-color: white;
+	border-radius: 40px;
+}
+.page_content_div h1
+{
+	font-size:35px;
+	font-family:  "Times New Roman", Georgia, Serif;
+	color:#D5132B;
+	text-align: center;
+}
+#panel_h1
+{
+	font-size:40px;
+}
+
+
+.what_html,.Why_html,.html_version,.example,.html_tag li p h1{
+	text-align: justify;
+    text-justify: inter-word;
+
+}
+.what_html,.Why_html,.html_version,.example,.html_tag
+{
+	padding:20px;
+	font-family: Passion One;
+	font-size: 30px;
+	color:navy;
+}
+
+.what_html,.Why_html,.html_version,.example,.html_tag p,li{
+	font-family: "Verdana", Geneva, sans-serif;
+	font-size: 15px;
+	color: black;
+}
+
+.html_tag h4{
+	color:black;
+	font-family: "Verdana", Geneva, sans-serif;
+	font-size:15px;
+}
+
+tr:nth-child(even){
+	background-color: navy;
+	color: white;
+}
+.html_tag
+{
+	padding:20px;
+}
+
+footer
+{
+	height:80px;
+	background-color:white;
+	padding-top:10px;
+	color:navy;
+}
+footer h3
+{
+	color:#D5132B;
+	font-family: Fredoka One;
+}
+
+footer ul li
+{
+	display:inline-block;
+	padding: 12px;
+	padding-top: 18px;
+	color:navy;
+}
+footer a
+{
+	text-decoration: none;
+	color:navy;
+	font-family: Passion One;
+	font-size: 18px;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+
+/*************side menu starts from here***********************************************************************************/
+#mySidenav
+{
+	margin-top: 50px;
+}
+
+#mySidenav h1
+{
+    color:#D5132B;;
+}
+
+#mySidenav h1:hover
+{
+    color:white;
+}
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:navy ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    padding: 8px 20px 8px 22px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav h1
+{
+	padding-left:20px;
+	font-size:32px;
+}
+.sidenav h1:hover
+{
+	color:navy;
+}
+
+.sidenav a:hover,.offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main
+{
+    transition: margin-left .5s;
+   padding-left:16px;
+   padding-top:16px;
+}
+.sidenav a button:hover
+{
+	background-color:#D5132B;
+}
+.Ways
+{
+	border:2px solid navy;
+	box-shadow: 5px 5px 5px;
+}
+.back
+{
+	background-image: url(../img/Background.png);
+}

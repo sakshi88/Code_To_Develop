@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css05.css">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="Title">{/}CODE_TO_DEVELOP{/}</h1>
+
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-md-offset-3" id="box">
+        <h3 id="Sign">SIGN UP</h3>
+        <div class="form-group">
+         <div class="input">
+           <input type="text" class="form-control input-lg" id="usr" placeholder="Username">
+         </div> 
+         <div id="name"></div>
+         <div class="input">
+            <input type="email" class="form-control input-lg" id="email" placeholder="Email">
+         </div>
+         <div id="email1"></div>
+         <div class="input">
+            <input type="password" class="form-control input-lg" id="pwd" placeholder="Password">
+         </div>
+         <div id="pass"></div>
+         
+        </div>  
+       
+        <button type="submit" onclick="check();validateForm();" class="btn btn-lg btn-primary btn-block">SUBMIT</button>
+        <hr>
+        <p>Or connect with</p>
+
+
+      <div class="row">
+        <div class="col-md-4">
+             <a class="btn btn-sm btn-social btn-facebook">
+              <span class="fa fa-facebook"></span> Sign in with Facebook
+            </a>
+        </div>
+        
+         <div class="col-md-4">
+             <a class="btn btn-sm btn-social btn-google">
+              <span class="fa fa-google"></span> Sign in with Google
+            </a>
+        </div>
+       
+        <div class="col-md-4">
+             <a class="btn btn-sm btn-social btn-github">
+              <span class="fa fa-github"></span> Sign in with Github
+            </a>
+        </div>      
+      </div>
+
+      </div>
+    </div>
+</div>
+</body>
+
+ <script type="text/javascript">
+
+    function submit()
+    {
+      alert("Your details have been successfully saved.Please Sign In to continue.....");
+      window.location.reload("true");
+    }
+
+    function validateForm() {
+    var x = document.getElementById("email").value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+         document.getElementById("email1").innerHTML="Please enter a valid email";
+        return false;
+    }
+}
+    function check()
+    {
+      var a=document.getElementById("usr").value;
+      var b=document.getElementById("email").value;
+      var c=document.getElementById("pwd").value;
+      var x=0,y=0,z=0;
+      var count=0;
+      var z=/[0-9]/;      
+      var v=/[^a-zA-Z_0-9]/;
+      var q=/[a-zA-Z_0-9]/;
+      if(a=="")
+      {  document.getElementById("name").innerHTML="Please enter a valid name";
+         x=1;
+      }   
+      else if(a.match(z))
+      {
+         document.getElementById("name").innerHTML="Please enter a valid name";
+         x=1;
+      }
+      else if(a.match(v))
+      {
+        document.getElementById("name").innerHTML="Please enter valid name";
+         x=1;
+      }
+      else
+      {
+        for(var i=0;i<a.length;i++)
+          count++;
+        if(count>10)
+        {  document.getElementById("name").innerHTML="Too Long!!!";
+            x=1;
+         }
+
+      }
+      
+      if(b=="")
+      {  document.getElementById("email1").innerHTML="Please enter a valid email";
+          y=1;
+      }
+
+      if(c=="")
+      {  document.getElementById("pass").innerHTML="Please enter password";
+          z=1;
+      }
+       
+      if((x==0)&&(y==0)&&(z==0))
+        submit();
+    }
+  </script>-
+</html>

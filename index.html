@@ -1,0 +1,362 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code_To_Develop</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css01.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand em-text project_name">{/}CODE_TO_DEVELOP{/}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" class="smoothScroll glyphicon glyphicon-home" title="HOME"></a></li>
+            <li><a href="#courses" class="smoothScroll glyphicon glyphicon-book" title="COURSES"></a></li>
+            <li><a href="#practice" class="smoothScroll glyphicon glyphicon-pencil" title="PRACTICE"></a></li>
+           
+          </ul>
+
+          <div  class="collapse navbar-collapse navbar-right">
+            <ul class = "nav navbar-nav">
+            <li><a href="tips.html" target="_blank" class="smoothScroll glyphicon glyphicon-education" title="TIPS"></a></li>
+            <li><a href="#About_us" class="smoothScroll glyphicon glyphicon-eye-open" title="ABOUT"></a></li>
+            <li><a href="#contact_us" class="smoothScroll glyphicon glyphicon-earphone" title="CONTACT"></a></li>
+            <li><a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="modal" data-target="#myModal" title="SIGN IN"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+     
+
+
+
+<!-*******************************************-THe sign up modal**************************************************->
+
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:#D5132B; font-size: 20px;">SIGN IN</h4>
+        </div>
+        <div class="modal-body">
+         <form>
+            <div class="form-group">
+              
+              <input type="email" class="form-control" id="email" placeholder="Username">
+            </div>
+            <div class="form-group">
+             
+              <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="new_user">
+            <p>NEW USER</p>
+          </div>
+          <a href="signup.html"><button type="button" class="btn btn-primary">SIGN UP</button></a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+
+
+ 
+    <div class="jumbotron">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>   
+      <div class="carousel-inner" role="listbox">
+       <div class="item active">
+        <div class="carousel_div">
+          <div class="carousel-caption caption">
+            <h1>{/}CODE_TO_DEVELOP{/}</h1>
+            <p>Learn to develop in correct way</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel_div">
+          <div class="carousel-caption caption">
+            <h1 >{/} HTML5 & CSS3 {/}</h1>
+            <p >Add new features and Customize your website.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="carousel_div">
+          <div class="carousel-caption caption">
+            <h1 >{/} JavaScript {/}</h1>
+            <p >Learn to make your website responsive.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel_div">
+          <div class="carousel-caption caption">
+            <h1 >{/} Practice Set {/}</h1>
+            <p >Test your skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section> 
+      
+     <!--****************************courses Section***********************************************************--> 
+
+
+
+    <div id="courses">
+      <div class="container wow bounceInDown data-wow-duration="2s"" data-duration="2s">
+        <div id="html">
+          <div class="row">
+            <div class="col-md-2  course_image">
+              <img src="img/html5.png" ></img>
+            </div>
+            <div class="col-md-8">
+              <h4 id="h4_html">HTML</h4>
+              <p id="h4_p_html">
+                  Hyper Text Markup Language  is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. Each page contains a series of connections to other pages called hyperlinks. HTML is used to do proper formatting of text and images so that your Internet browser may display them as they are intended to look.
+                  <br><br>
+                  <a href="html_intro.html" target="_blank"><button  id="ab" class="btn btn-danger btn-lg" >Learn HTML5</button></a>
+              </p>
+             
+            </div>  
+          </div>  
+        </div>  
+      </div>
+    </div>
+
+    
+    <div class="container wow bounceInLeft data-wow-duration="2s"" data-duration="2s">
+      <div id="css">
+        <div class="row">
+          <div class="col-md-8">
+            <h4 id="h4_css">CSS</h4>
+            <p id="h4_p_css">
+                CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.
+                <br><br>
+                <a href="css_intro.html" target="_blank"><button id="ab" class="btn btn-danger btn-lg" >Learn CSS</button></a>
+            </p>
+           
+          </div>
+
+          <div class="col-md-offset-2 col-md-2   course_image">
+              <img src="img/CSS3.png" ></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+      <div class="container wow slideInUp " data-duration="2s">
+        <div id="javascript">
+          <div class="row">
+            <div class=" col-md-2  course_image">
+              <img src="img/js.jpg" ></img>
+            </div>
+            <div class="col-md-offset-1 col-md-8 ">
+              <h4 id="h4_js">JAVASCRIPT</h4>
+                   <p id="h4_p_js">
+                        Javascript is an an  high-level, dynamic, untyped, and interpreted and object-oriented computer programming language commonly used to create interactive effects within web browsers.It has been standardized in the ECMAScript language specification.It is is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,imperative, and functional programming styles.
+                        <br><br>
+                        <a href="js_intro.html" target="_blank"><button  id="ab" class="btn btn-danger btn-lg" >Learn JAVASCRIPT</button></a>
+                   </p>
+                    
+            </div>
+          </div> 
+        </div>
+      </div>
+  </div>
+  <br><br>
+
+
+ <!--****************************PRACTICE Section***********************************************************-->
+
+   <section>
+
+      <div id="practice">
+        <div class="row">
+          <div class="col-md-4 wow bounceInLeft data-wow-duration="2s"" data-wow-offset="10" >
+            <img src="img/practice.jpg">
+          </div> 
+
+          <div class="col-md-offset-2 col-md-6  ">
+            
+            <h3 id="practice_h3">PRACTICE</h3>
+            <p id="practice_p">Practice set of questions to improve your skills and test yourself!</p>
+
+            <div class="row myButton">
+              <div class="col-md-6 ">
+                 <a href="html_practice1.html" target="_blank"><button type="submit" class="btn btn-primary btn-lg" id="button1">HTML & CSS PRACTICE</button></a>
+              </div>
+              <div class="col-md-6 ">
+                <a href="js_practice1.html" target="_blank"><button type="submit" class="btn btn-primary btn-lg" id="button2">JAVASCRIPT PRACTICE</button></a>
+              </div>
+            </div> 
+          </div> 
+        </div>  
+      </div>
+     </section>
+
+ <!--*******************************************About us Section**************************************************-->
+     
+      <div id="About_us">
+        <div class="container">
+          <div class="row about_us">
+            <div class="col-md-5">
+            <div>
+              <img src="img/about.png" style="width:100%;" class="wow slideInLeft"></img>
+            </div>
+              <div>
+                <br><br>
+                <p>
+                  This project was basically made to give the simple but the best way to learn Front-end web designing. The targeteed is the beginners who love to code but don't get the right content to begin with and the way to learn and code efficiently.
+                </p>
+                <p>
+                 This initiative was taken by both of us so as to help th begginers learn and get the right direction.We would to like to invite other people to contribute too.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-offest-1 col-md-3 ">
+                <div class="thumbnail">
+                    <img src="img/me.jpg"  style="height:300px;">
+                      <h3>Sakshi Kataria</h3>
+                      <ul style="list-style:none">
+                        <li>B.tech(3rd Year)</li>
+                        <li>Front-end Developer</li>
+                        <li></li>
+                      </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="img/sm.jpg"  alt="">
+                      <h3>Shaurya Mittal</h3>
+                      <ul style="list-style:none">
+                        <li> B.tech(3rd Year)</li>
+                        <li>Front-end Developer</li>
+                        <li></li>
+                      </ul>
+                  </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      
+    
+  <!--************************************Contact us  Section***********************************************************-->
+
+     <section class="caal_to_action_area " id="contact_us">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icons_link">
+                      <div class="row">
+                        <div class="col-md-2 col-xs-2 wow bounceInDown link" >
+                         <a href="#practice"><img src="img/fb.png"></a>
+                        </div>
+
+                        <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-2  wow bounceInDown link" data-wow-delay="1s"  >
+                          <a href="#practice"><img src="img/twit.png"></a>
+                        </div>
+
+                        <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-2 wow bounceInLeft  link" data-wow-delay="2s">
+                         <a href="#practice"><img src="img/git.png"></a>
+                        </div>
+
+                        <div class="col-md-offset-1 col-md-2 col-xs-offset-1 col-xs-2 wow bounceInRight   link" data-wow-delay="3s">
+                         <a href="#practice"><img src="img/email.png"></a>
+                        </div> 
+                      </div>
+                    </div>      
+                </div>
+                <br><br>
+                <div class="col-md-offset-2 col-md-6 wow slideInRight">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div >
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Name" style=" border:2px #D5132B solid; background-color:white">
+                            </div>
+                        </div>
+                        <div class="form-group">  
+                        <div >
+                            <input type="email" class="form-control" id="inputPassword3" placeholder="Email" style="background-color:white;border:2px #D5132B solid">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <div >    
+                            <textarea class="form-control" rows="7" placeholder="Message" style="background-color:white;border:2px #D5132B solid"></textarea>
+                            </div>
+                        </div>   
+                    <div class="form-group">
+                    <div >
+                        <button type="submit" class="btn btn-primary btn-lg" id="button3">SEND</button>
+                    </div>
+                     </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+     window.onbeforeunload = function(){ window.scrollTo(0,0); }
+    </script>
+     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script src="js/bootstrap.js"></script>
+    
+  </body>
+</html>
